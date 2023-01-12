@@ -1,0 +1,13 @@
+hostname: skakun-family.com
+port: 19922
+username: tunnel
+tunneled_ports:
+ - "1501:localhost:1501"   #Nextcloud
+ - "1502:localhost:1502"   #Roundcube
+ - "1503:localhost:8096"   #Jellyfin
+ - "1504:localhost:1504"   #Gotify
+ - "4533:localhost:4533"   #Navidrome
+ - "5432:localhost:5432"   #Postgres
+ - "6379:localhost:6379"   #Redis
+ - "33219:localhost:33219" #Bitwarden
+#- [{dest_ip}]:{dest_port}:{local_ip}:{local_port}
